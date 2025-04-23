@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'FranieSemiBold';
+    src: url('../assets/fonts/Franie-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'InterMedium';
+    src: url('../assets/fonts/Inter-Medium.otf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: InterSemiBold;
+    src: url('../assets/fonts/Inter-SemiBold.otf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FranieRegular';
+    src: url('../assets/fonts/Franie-Regular.otf') format('opentype');
+    /* font-weight: 400; */
+    font-style: normal;
+}
+  

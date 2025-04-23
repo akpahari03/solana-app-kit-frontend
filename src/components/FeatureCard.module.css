@@ -1,0 +1,47 @@
+    .card {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text {
+    font-family: 'InterSemiBold' ,'Inter', sans-serif;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cardGridLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.cardGridLayout > :nth-child(1) {
+  grid-row: span 2;
+}
+
+.cardGridLayout > :nth-child(2),
+.cardGridLayout > :nth-child(3) {
+  grid-column: 2;
+}
+
+.cardGridLayout > :nth-child(4),
+.cardGridLayout > :nth-child(5) {
+  grid-column: 3;
+}

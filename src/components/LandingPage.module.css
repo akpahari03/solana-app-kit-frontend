@@ -1,0 +1,143 @@
+/* LandingPage.module.css */
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url('../assets/landing-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+/* Top overlay image */
+.topOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* adjust as needed */
+  object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.pillLink {
+  display: inline-block;
+  background-color: #d1e9ff20;
+  color: #DAEEFE;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+  border: 1px solid #d1e9ff40;
+}
+
+.title {
+  font-family: 'FranieSemiBold', 'Inter', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 12px 0;
+}
+
+.subtitle {
+  font-family: 'InterMedium' ,'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #DAEEFE;
+  opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+.buttons {
+  font-family: 'InterSemiBold' ,'Inter', sans-serif;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ghostButton {
+  background: #ffffff;
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.05);
+}
+
+.ghostButton:hover {
+  background: #e2e2e2;
+}
+
+.primaryButton {
+  background-color: #d1e9ff40;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid #d1e9ff70;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.primaryButton:hover {
+  background-color: #d1e9ff60;
+}
+
+.commandBox {
+  display: inline-flex;
+  align-items: center;
+  background-color: #d1e9ff20;
+  border: 1px solid #d1e9ff40;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  color: #DAEEFE;
+  font-weight: 300;
+  margin-bottom: 20px;
+  cursor: pointer;
+  gap: 10px;
+  transition: background 0.2s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+}
+.commandBox:hover {
+  background-color: #d1e9ff40;
+}
+
+.command {
+  font-family: 'InterMedium' ,'Inter', sans-serif;
+}
+
+.copyIcon {
+  font-size: 1rem;
+  color: #DAEEFE;
+}
+  

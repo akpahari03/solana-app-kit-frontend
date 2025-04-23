@@ -1,0 +1,105 @@
+.footer-background {
+    padding: 42px 42px 42px 42px;
+}
+.footer {
+    background-color: #1C2027;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 48px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .footer-left {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .footer-heading p {
+    font-family: 'InterSemiBold', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .footer-download-btn {
+    font-family: 'InterSemiBold', sans-serif;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .footer-wallet {
+    font-family: 'InterMedium', sans-serif;
+    background-color: #2D333B;
+    color: #99A3B3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    width: fit-content;
+  }
+  
+  .copy-icon {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  
+  .footer-logo img {
+    height: 24px;
+    margin-top: 24px;
+  }
+  
+  .footer-right {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .footer-columns {
+    display: flex;
+    gap: 64px;
+    margin-bottom: 24px;
+  }
+  .footer-title {
+    font-family: 'InterMedium', sans-serif;
+    color: #99A3B3
+  }
+  
+  .footer-columns p {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  .btn {
+    font-family: 'InterSemiBold', sans-serif;
+  }
+  .footer-bottom-text {
+    font-family: 'InterMedium', sans-serif;
+    color: #99A3B3;
+  }
+  .copy-feedback {
+    margin-left: 10px;
+    font-size: 0.85rem;
+    color: #a0e7a0;
+  } 
+  .btn a {
+    text-decoration: none;
+    color: inherit;
+  }
