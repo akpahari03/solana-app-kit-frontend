@@ -1,6 +1,8 @@
 .signup-section {
-    margin-left: 42px;
-    margin-right: 42px;
+    margin-left: 125px;
+    margin-right: 125px;
+    border: 1px solid #ffffff7b;
+    border-radius: 20px;
   }
   
   .signup-background {
@@ -14,7 +16,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -34,7 +36,7 @@
   .signup-left-top {
     position: absolute;
     top: 32px;
-    left: 48px;
+    left: 20px;
   }
   
   .signup-heading {
@@ -50,7 +52,7 @@
   .signup-left-bottom {
     position: absolute;
     bottom: 32px;
-    left: 48px;
+    left: 20px;
   }
   
   .signup-powered {
@@ -71,12 +73,13 @@
   .signup-center {
     position: absolute;
     bottom: 0;
-    left: 55%;
+    left: 56%;
     transform: translateX(-50%);
+    
   }
   
   .signup-center img {
-    height: 240px;
+    height: 220px;
     object-fit: contain;
   }
   
@@ -84,10 +87,10 @@
   .signup-right {
     position: absolute;
     top: 0px;
-    right: 48px;
+    right: 20px;
   }
   
   .signup-right img {
-    height: 240px;
+    height: 220px;
     object-fit: contain;
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import Navbar from './Navbar';
 import styles from './LandingPage.module.css';
 import topOverlay from '../assets/top-overlay.png';
 import { FaRegCopy, FaCheck , FaGithub} from 'react-icons/fa';
@@ -15,6 +16,8 @@ const LandingPage = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className={styles.container}>
       <img src={topOverlay} alt="Top Overlay" className={styles.topOverlay} />
       <div className={styles.content}>
@@ -47,6 +50,7 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

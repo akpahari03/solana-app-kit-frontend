@@ -24,7 +24,7 @@ const PhoneSection = () => {
                 <img src={iosIcon} alt="Download on iOS" />
                 Download on iOS
               </a>
-              <a href="#" className={styles.storeBtn}>
+              <a href="https://play.google.com/store/games?hl=en&pli=1" className={styles.storeBtn}>
                 <img src={playIcon} alt="Get it on Google Play" />
                 Get it on Google Play
               </a>

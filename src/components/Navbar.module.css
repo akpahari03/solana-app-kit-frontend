@@ -5,8 +5,8 @@
     padding: 20px 40px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    background-color: transparent;
-    position: absolute;
+    background-image: url('../assets/landing-bg.png');
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;

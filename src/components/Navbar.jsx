@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import logo from '../assets/logo.png'; // Replace with actual logo
+// import landingbg from '../assets/landing-bg.png'; // Replace with actual landing background
 
 const Navbar = () => {
   return (
@@ -16,7 +17,10 @@ const Navbar = () => {
       </div>
 
       <div className={styles.right}>
-        <button className={styles.cta}>Download the App</button>
+        <button className={styles.cta}
+        onClick={() => window.open('https://play.google.com/store/games?hl=en&pli=1', '_blank')}>
+          Download the App
+        </button>
       </div>
     </nav>
   );

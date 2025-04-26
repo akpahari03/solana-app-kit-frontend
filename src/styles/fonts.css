@@ -11,7 +11,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: InterSemiBold;
+    font-family: 'InterSemiBold';
     src: url('../assets/fonts/Inter-SemiBold.otf') format('truetype');
     font-weight: 600;
     font-style: normal;
@@ -20,6 +20,12 @@
     font-family: 'FranieRegular';
     src: url('../assets/fonts/Franie-Regular.otf') format('opentype');
     /* font-weight: 400; */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Geist-Mono';
+    src: url('../assets/fonts/GeistMono.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
   

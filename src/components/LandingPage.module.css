@@ -113,6 +113,33 @@
 .commandBox {
   display: inline-flex;
   align-items: center;
+  background-color: #1c1f24;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 20px;
+  cursor: pointer;
+  gap: 12px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: none;
+  box-shadow: 0 0 0 transparent;
+
+}
+
+.commandBox:hover {
+  box-shadow: 0 0 16px 4px rgba(0, 255, 255, 0.2), 
+              0 0 24px 8px rgba(142, 0, 255, 0.15), 
+              0 0 32px 16px rgba(0, 255, 255, 0.1);
+  transform: scale(1.01);
+}
+
+/* .commandBox {
+  display: inline-flex;
+  align-items: center;
   background-color: #d1e9ff20;
   border: 1px solid #d1e9ff40;
   border-radius: 8px;
@@ -130,10 +157,10 @@
 }
 .commandBox:hover {
   background-color: #d1e9ff40;
-}
+} */
 
 .command {
-  font-family: 'InterMedium' ,'Inter', sans-serif;
+  font-family: 'Geist-Mono','InterMedium' ,'Inter';
 }
 
 .copyIcon {
