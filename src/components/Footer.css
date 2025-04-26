@@ -43,21 +43,49 @@
   }
   
   .footer-wallet {
-    font-family: 'InterMedium', sans-serif;
+    position: relative;
+    font-family: 'Geist-Mono','InterMedium', sans-serif;
     background-color: #2D333B;
     color: #99A3B3;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
     padding: 10px 16px;
     font-size: 14px;
     width: fit-content;
+    cursor: pointer;
+  }
+  .copy-wrapper {
+    display: flex;
+    align-items: center;
   }
   
   .copy-icon {
+    width: 18px;
+    height: 18px;
     margin-left: 12px;
     cursor: pointer;
+  }
+  
+  .copy-icon.copied {
+    color:lime;
+    font-size: 18px;
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0.9;
+    pointer-events: none;
   }
   
   .footer-logo img {

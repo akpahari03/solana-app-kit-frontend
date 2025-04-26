@@ -3,10 +3,12 @@ import './Footer.css';
 import logo from '../assets/logo2.png'; 
 import copyIcon from '../assets/copy.png'; 
 import { useState } from 'react';
+import { FaCheck } from 'react-icons/fa';
   
 const Footer = () => {
 
     const [copied, setCopied] = useState(false);
+    const [showTooltip, setShowTooltip] = useState(false);
     const fullAddress = 'SENDdRQtYMWaQrBroBrJ2Q53fgVuq95CV9UPGEvpCxa';
 
     const handleCopy = () => {
@@ -23,17 +25,34 @@ const Footer = () => {
           <p>Solana Apps, <br /> Built in Minutes.</p>
         </div>
         <button className="footer-download-btn">Download the App</button>
-        <div className="footer-wallet">
-      <span>$SEND...pCxa</span>
-      <div className="copy-wrapper" onClick={handleCopy}>
-        <img
-          src={copyIcon}
-          alt="Copy"
-          className={`copy-icon ${copied ? 'copied' : ''}`}
-          style={{ cursor: 'pointer' }}
-        />
-      </div>
+        <div className="footer-wallet"
+          onClick={handleCopy}
+          onMouseEnter={() => setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+        >
+        <span>$SEND...pCxa</span>
+        <div className="copy-wrapper">
+          {copied ? (
+            <FaCheck
+              className="copy-icon copied"
+              // style={{ cursor: 'pointer', color: 'lime', fontSize: '18px' }}
+            />
+          ) : (
+            <img
+              src={copyIcon}
+              alt="Copy"
+              className={`copy-icon ${copied ? 'copied' : ''}`}
+              style={{ cursor: 'pointer' }}
+            />
+          )}
         </div>
+        {showTooltip && (
+        <div className="tooltip">
+          {copied ? 'Copied!' : 'Click to copy'}
+        </div>
+        )}
+      </div>
+
         <div className="footer-logo">
           <img src={logo} alt="Solana App Kit Logo" />
         </div>
