@@ -70,15 +70,18 @@
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
   .links {
-    position: absolute;
-    top: 80px;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    background: #10141b;
+    bottom: 0;
+    background: #0e1013; /* dark background full screen */
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    padding: 0;
     display: none;
+    z-index: 20;
   }
 
   .showMenu {
@@ -87,6 +90,10 @@
 
   .menuIcon {
     display: block;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 30;
   }
 
   .cta {
@@ -94,10 +101,10 @@
   }
 
   .navbar {
-    padding: 16px 24px;
+    padding: 12px 20px;
   }
 
   .left {
-    gap: 20px;
+    gap: 16px;
   }
 }
