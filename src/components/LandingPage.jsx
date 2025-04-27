@@ -17,11 +17,11 @@ const LandingPage = () => {
 
   return (
     <>
-    <Navbar/>
+    
     <div className={styles.container}>
+    <Navbar/>
       <img src={topOverlay} alt="Top Overlay" className={styles.topOverlay} />
       <div className={styles.content}>
-
       <div className={styles.commandBox} onClick={handleCopy}>
           <code className={styles.command}>npx create-solana-app</code>
           {copied ? (
