@@ -1,89 +1,88 @@
 .section {
-    width: 100%;
-    padding: 96px 42px 42px 42px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  .phoneContainer {
-    position: relative;
-    max-width: 1200px;
-    width: 100%;
-  }
-  
-  .phoneImage {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 42px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    pointer-events: none;
-    box-sizing: border-box;
-  }
-  
-  .topLeft h2 {
-    font-family: 'FranieSemiBold', 'Inter', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: white;
-    margin: 0;
-    pointer-events: auto;
-  }
-  
-  .topRight {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    pointer-events: auto;
-  }
-  
-  .topRight p {
-    font-family: 'FranieRegular', 'Inter', sans-serif;
-    font-size: 1rem;
-    color: white;
-    font-weight: 300;
-    margin-bottom: 16px;
-  }
-  
-  .storeButtons {
-    display: flex;
-    gap: 12px;
-  }
-  
-  .storeBtn {
-    font-family: 'InterMedium' ,'Inter', sans-serif;
-    background: white;
-    color: black;
-    border-radius: 999px;
-    padding: 10px 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 100;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-  
-  .storeBtn:hover {
-    background-color: #eaeaea;
-  }
-  
-  .storeBtn img {
-    width: 18px;
-    height: 18px;
-  }
-  
+  width: 100%;
+  padding: 96px 42px 42px 42px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.phoneContainer {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.phoneImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 42px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.topLeft h2 {
+  font-family: 'FranieSemiBold', 'Inter', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  pointer-events: auto;
+}
+
+.topRight {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: auto;
+}
+
+.topRight p {
+  font-family: 'FranieRegular', 'Inter', sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.storeButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.storeBtn {
+  font-family: 'InterMedium' ,'Inter', sans-serif;
+  background: white;
+  color: black;
+  border-radius: 999px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 100;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.storeBtn:hover {
+  background-color: #eaeaea;
+}
+
+.storeBtn img {
+  width: 18px;
+  height: 18px;
+}

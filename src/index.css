@@ -10,7 +10,8 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  background-color: #000; /* Optional: dark fallback behind your bg image */
+  background-color: #000;
+  scroll-behavior: smooth;
 }
 
 img {

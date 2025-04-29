@@ -54,14 +54,15 @@
 
   .container {
     position: relative;
-    min-height: 100vh;
+    height: 100vh; /* not min-height */
     width: 100%;
     background-image: url('../assets/landing-bg.png');
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* 👈 Add this */
     background-color: #0e1013;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: 'Inter', sans-serif;
     color: #fff;
   }
