@@ -1,96 +1,96 @@
 .signup-section {
-  margin-left: 125px;
-  margin-right: 125px;
-  border: 1px solid #ffffff7b;
-  border-radius: 20px;
-}
-
-.signup-background {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  height: 312px;
-}
-
-.signup-bg-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* border-radius: 20px; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.signup-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-/* Top-left heading */
-.signup-left-top {
-  position: absolute;
-  top: 32px;
-  left: 20px;
-}
-
-.signup-heading {
-  font-family: 'InterSemiBold', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-  line-height: 1.4;
-  color: white;
-}
-
-/* Bottom-left logos */
-.signup-left-bottom {
-  position: absolute;
-  bottom: 32px;
-  left: 20px;
-}
-
-.signup-powered {
-  font-family: 'InterSemiBold', sans-serif;
-  font-size: 12px;
-  color: #99A3B3;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.signup-logos {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-/* Bottom-center welcome image */
-.signup-center {
-  position: absolute;
-  bottom: 0;
-  left: 56%;
-  transform: translateX(-50%);
+    margin-left: 125px;
+    margin-right: 125px;
+    border: 1px solid #ffffff7b;
+    border-radius: 20px;
+  }
   
-}
-
-.signup-center img {
-  height: 220px;
-  object-fit: contain;
-}
-
-/* Top-right social login */
-.signup-right {
-  position: absolute;
-  top: 0px;
-  right: 20px;
-}
-
-.signup-right img {
-  height: 220px;
-  object-fit: contain;
-}
+  .signup-background {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 312px;
+  }
+  
+  .signup-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 20px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .signup-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  /* Top-left heading */
+  .signup-left-top {
+    position: absolute;
+    top: 32px;
+    left: 20px;
+  }
+  
+  .signup-heading {
+    font-family: 'InterSemiBold', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+    color: white;
+  }
+  
+  /* Bottom-left logos */
+  .signup-left-bottom {
+    position: absolute;
+    bottom: 32px;
+    left: 20px;
+  }
+  
+  .signup-powered {
+    font-family: 'InterSemiBold', sans-serif;
+    font-size: 12px;
+    color: #99A3B3;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  
+  .signup-logos {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  /* Bottom-center welcome image */
+  .signup-center {
+    position: absolute;
+    bottom: 0;
+    left: 56%;
+    transform: translateX(-50%);
+    
+  }
+  
+  .signup-center img {
+    height: 220px;
+    object-fit: contain;
+  }
+  
+  /* Top-right social login */
+  .signup-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+  }
+  
+  .signup-right img {
+    height: 220px;
+    object-fit: contain;
+  }

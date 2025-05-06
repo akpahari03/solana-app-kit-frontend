@@ -1,4 +1,27 @@
+/* .overlayImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%; /* adjust size as needed */
+  /* height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none; /* optional: makes sure it's non-interactive */ 
+
+
+/* .overlayImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+} */
+  
 .card {
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 40px;
@@ -15,10 +38,13 @@
   line-height: 1.4;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
+
 .text {
-    font-family: 'InterSemiBold' ,'Inter', sans-serif;
+  font-family: 'InterSemiBold' ,'Inter', sans-serif;
 }
+
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
@@ -44,4 +70,149 @@
 .cardGridLayout > :nth-child(4),
 .cardGridLayout > :nth-child(5) {
   grid-column: 3;
+}
+
+
+.icon1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+.card:hover .icon1 {
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+.icon2 {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  width: 60%;
+  height: auto;
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.card:hover .icon2 {
+  animation: rotateZoomClockwise 0.5s ease-in-out forwards;
+}
+
+@keyframes rotateZoomClockwise {
+  0% {
+    transform: translateY(-50%) scale(1) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) scale(1.1) rotate(10deg);
+  }
+}
+
+
+
+.icon3 {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  width: 70%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.card:hover .icon3 {
+  animation: liftRotate 0.5s ease-in-out forwards;
+}
+
+@keyframes liftRotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -60%) rotate(-10deg);
+  }
+}
+
+
+.icon4 {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 68%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.card:hover .icon4 {
+  animation: zoomEffect 0.5s ease-in-out forwards;
+}
+
+.icon5 {
+  position: absolute;
+  top: 45%;
+  right: -12%;
+  transform: translateY(-50%);
+  width: 70%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+  transition: filter 0.3s ease;
+}
+.card:hover .icon5 {
+  animation: moveLeftWithShadow 0.5s ease-in-out forwards;
+}
+
+@keyframes float {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  50%  { transform: translate(-50%, -55%) scale(1.05); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+@keyframes floatUpDown {
+  0%   { transform: translate(-50%, -50%); }
+  50%  { transform: translate(-50%, -55%); }
+  100% { transform: translate(-50%, -50%); }
+}
+@keyframes zoomEffect {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+
+@keyframes moveLeftWithShadow {
+  0% {
+    transform: translateY(-50%) translateX(0);
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  }
+  100% {
+    transform: translateY(-50%) translateX(-15px);
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+  }
+}
+@keyframes float2 {
+  0%, 100% { transform: translate(-50%, -50%); }
+  50% { transform: translate(-50%, -54%); }
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translate(-50%, -50%); }
+  50% { transform: translate(-50%, -60%); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.08); }
 }

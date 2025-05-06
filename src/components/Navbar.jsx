@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import logo from '../assets/logo.svg';
-import burgerMenu from '../assets/burger-menu.png' // Your uploaded image
+import burgerMenu from '../assets/burger-menu.png'
+import closeIcon from '../assets/close.png' 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,11 +24,9 @@ const Navbar = () => {
         </button>
 
         {/* Mobile menu icon */}
-        <img
-          src={burgerMenu}
-          alt="Menu"
-          className={styles.menuIcon}
-          onClick={() => setMenuOpen(!menuOpen)}
+        <img src={menuOpen ? closeIcon : burgerMenu}
+         alt="Menu" className={styles.menuIcon} 
+         onClick={() => setMenuOpen(!menuOpen)} 
         />
       </div>
     </nav>

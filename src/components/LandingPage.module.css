@@ -1,66 +1,12 @@
-/* LandingPage.module.css */
-
-/* .container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: url('../assets/landing-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Inter', sans-serif;
-  color: #fff;
-}
-
-/* Top overlay image */
-/* .topOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto; /* adjust as needed */
-  /* object-fit: cover;
-  z-index: 2;
-  pointer-events: none; */
-/* }
-.content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  max-width: 700px;
-  padding: 0 20px;
-} */
-
-/* .container {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background-image: url('../assets/landing-bg.png');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  /* background-color: #0e1013; /* fallback color */
-  /* overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Inter', sans-serif;
-  color: #fff;
-  flex-direction: column; } */ 
-
   .container {
     position: relative;
-    height: 100vh; /* not min-height */
+    min-height: 100vh;
     width: 100%;
     background-image: url('../assets/landing-bg.png');
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* 👈 Add this */
+    /* background-attachment: fixed; */
     background-color: #0e1013;
     overflow: hidden;
     font-family: 'Inter', sans-serif;
@@ -256,12 +202,13 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 631px) {
+@media (max-width: 768px) {
   .container {
     background-size: cover;
     background-position: center top;
     min-height: 100vh;
     padding-top: 80px;
+    
   }
 
   .topOverlay {

@@ -1,6 +1,5 @@
 import React from 'react';
 import LandingPage from './components/LandingPage';
-import Navbar from './components/Navbar';
 import PhonesSection from './components/PhonesSection';
 import FeatureSection from './components/FeatureSection';
 import SignUpSection from './components/SignUpSection';
