@@ -4,6 +4,10 @@ import Navbar from './Navbar';
 import styles from './LandingPage.module.css';
 import topOverlay from '../assets/top-overlay.png';
 import { FaRegCopy, FaCheck , FaGithub} from 'react-icons/fa';
+import starLeft from '../assets/star-left.png';
+import starRight from '../assets/star-right.png';
+import elementLeft from '../assets/element-left.png';
+import elementRight from '../assets/element-right.png';
 
 const LandingPage = () => {
 
@@ -20,6 +24,10 @@ const LandingPage = () => {
     
     <div className={styles.container}>
     <Navbar/>
+      <img src={starLeft} alt="Star Left" className={styles.starLeft} />
+      <img src={starRight} alt="Star Right" className={styles.starRight} />
+      <img src={elementLeft} alt="Element Left" className={styles.elementLeft} />
+      <img src={elementRight} alt="Element Right" className={styles.elementRight} />
       <img src={topOverlay} alt="Top Overlay" className={styles.topOverlay} />
       <div className={styles.content}>
       <div className={styles.commandBox} onClick={handleCopy}>
