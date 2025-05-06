@@ -38,7 +38,7 @@ const LandingPage = () => {
 
         <div className={styles.buttons}>
           <a
-            href="https://github.com"
+            href="https://github.com/SendArcade/solana-app-kit"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ghostButton}

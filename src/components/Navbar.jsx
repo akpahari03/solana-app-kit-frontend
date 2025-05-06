@@ -12,8 +12,8 @@ const Navbar = () => {
       <div className={styles.left}>
         <img src={logo} alt="App Kit Logo" className={styles.logo} />
         <div className={`${styles.links} ${menuOpen ? styles.showMenu : ''}`}>
-          <a href="#" className={styles.link}>SendAI</a>
-          <a href="#" className={styles.link}>Send Arcade</a>
+          <a href="https://www.sendai.fun/" target='_blank' className={styles.link}>SendAI</a>
+          <a href="https://sendarcade.fun/" target='_blank' className={styles.link}>Send Arcade</a>
         </div>
       </div>
 

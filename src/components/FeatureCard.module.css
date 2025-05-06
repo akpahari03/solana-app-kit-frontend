@@ -1,25 +1,3 @@
-/* .overlayImage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70%; /* adjust size as needed */
-  /* height: auto;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  pointer-events: none; /* optional: makes sure it's non-interactive */ 
-
-
-/* .overlayImage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70%;
-  height: auto;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  pointer-events: none;
-} */
-  
 .card {
   position: relative;
   width: 100%;
@@ -72,7 +50,7 @@
   grid-column: 3;
 }
 
-
+/* css of icons and animation inside the cards */
 .icon1 {
   position: absolute;
   top: 50%;
@@ -85,6 +63,12 @@
 }
 .card:hover .icon1 {
   animation: floatUpDown 2s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%   { transform: translate(-50%, -50%); }
+  50%  { transform: translate(-50%, -55%); }
+  100% { transform: translate(-50%, -50%); }
 }
 
 .icon2 {
@@ -111,8 +95,6 @@
   }
 }
 
-
-
 .icon3 {
   position: absolute;
   top: 75%;
@@ -137,7 +119,6 @@
   }
 }
 
-
 .icon4 {
   position: absolute;
   top: 45%;
@@ -153,6 +134,15 @@
   animation: zoomEffect 0.5s ease-in-out forwards;
 }
 
+@keyframes zoomEffect {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+
 .icon5 {
   position: absolute;
   top: 45%;
@@ -164,27 +154,9 @@
   pointer-events: none;
   transition: filter 0.3s ease;
 }
+
 .card:hover .icon5 {
   animation: moveLeftWithShadow 0.5s ease-in-out forwards;
-}
-
-@keyframes float {
-  0%   { transform: translate(-50%, -50%) scale(1); }
-  50%  { transform: translate(-50%, -55%) scale(1.05); }
-  100% { transform: translate(-50%, -50%) scale(1); }
-}
-@keyframes floatUpDown {
-  0%   { transform: translate(-50%, -50%); }
-  50%  { transform: translate(-50%, -55%); }
-  100% { transform: translate(-50%, -50%); }
-}
-@keyframes zoomEffect {
-  0% {
-    transform: translateY(-50%) scale(1);
-  }
-  100% {
-    transform: translateY(-50%) scale(1.2);
-  }
 }
 
 @keyframes moveLeftWithShadow {
@@ -196,23 +168,4 @@
     transform: translateY(-50%) translateX(-15px);
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
   }
-}
-@keyframes float2 {
-  0%, 100% { transform: translate(-50%, -50%); }
-  50% { transform: translate(-50%, -54%); }
-}
-
-@keyframes spin {
-  0% { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-@keyframes bob {
-  0%, 100% { transform: translate(-50%, -50%); }
-  50% { transform: translate(-50%, -60%); }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: translate(-50%, -50%) scale(1); }
-  50% { transform: translate(-50%, -50%) scale(1.08); }
 }

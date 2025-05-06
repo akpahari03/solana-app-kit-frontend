@@ -3,6 +3,9 @@ import styles from './PhonesSection.module.css';
 import phoneBg from '../assets/phone-section-bg.png';
 import iosIcon from '../assets/ios-icon.png';
 import playIcon from '../assets/play-icon.png';
+import phone1 from '../assets/phone1.png';
+import phone2 from '../assets/phone2.png';
+import phone3 from '../assets/phone3.png';
 
 const PhoneSection = () => {
   return (
@@ -29,6 +32,18 @@ const PhoneSection = () => {
                 Get it on Google Play
               </a>
             </div>
+          </div>
+        </div>
+        {/* Phone images at bottom */}
+        <div className={styles.phoneMockups}>
+          <div className={styles.phoneLeft}>
+            <img src={phone1} alt="Phone 1" />
+          </div>
+          <div className={styles.phoneCenter}>
+            <img src={phone2} alt="Phone 2" />
+          </div>
+          <div className={styles.phoneRight}>
+            <img src={phone3} alt="Phone 3" />
           </div>
         </div>
       </div>
