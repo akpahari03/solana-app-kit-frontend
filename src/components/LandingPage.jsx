@@ -8,6 +8,7 @@ import starLeft from '../assets/star-left.png';
 import starRight from '../assets/star-right.png';
 import elementLeft from '../assets/element-left.png';
 import elementRight from '../assets/element-right.png';
+import plusIcon from '../assets/Plus.png';
 
 const LandingPage = () => {
 
@@ -27,8 +28,10 @@ const LandingPage = () => {
       <img src={starLeft} alt="Star Left" className={styles.starLeft} />
       <img src={starRight} alt="Star Right" className={styles.starRight} />
       <img src={elementLeft} alt="Element Left" className={styles.elementLeft} />
+      <img src={plusIcon} alt="Plus Left" className={styles.plusleft} />
       <img src={elementRight} alt="Element Right" className={styles.elementRight} />
       <img src={topOverlay} alt="Top Overlay" className={styles.topOverlay} />
+      
       <div className={styles.content}>
       <div className={styles.commandBox} onClick={handleCopy}>
           <code className={styles.command}>npx create-solana-app</code>
