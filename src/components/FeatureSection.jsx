@@ -18,7 +18,7 @@ const FeatureSection = () => {
       <div className={styles.contentWrapper}>
         <div className={styles.textRow}>
           <div className={styles.leftText}>
-            <h2>The Open-Source React<br />Native Scaffold</h2>
+            <h2>The Open-Source React Native Scaffold</h2>
           </div>
           <div className={styles.rightText}>
             <p>Plug-and-play app modules<br />on top of Solana Protocols</p>
@@ -26,11 +26,36 @@ const FeatureSection = () => {
         </div>
 
         <div className={styles.grid}>
-            <FeatureCard bgImage={cardBlue} text="Profiles, chats, Interactive <br/> and Tradeable Feed" overlayImage={cardIcon1} overlayClass="icon1"/>
-            <FeatureCard bgImage={cardGreen} text="Swap and <br/> Copy Trade" overlayImage={cardIcon2} overlayClass="icon2"/>
-            <FeatureCard bgImage={cardYellow} text="Configurable <br/> Bonding Curves" overlayImage={cardIcon3} overlayClass="icon3"/>
-            <FeatureCard bgImage={cardGrey} text="Mint and <br/> Trade NFTs" overlayImage={cardIcon4} overlayClass="icon4"/>
-            <FeatureCard bgImage={cardLightBlue} text="Publish to Solana <br/> Mobile dApp store" overlayImage={cardIcon5} overlayClass="icon5"/>
+          <FeatureCard 
+            bgImage={cardBlue} 
+            text="Profiles, chats, Interactive<br />and Tradeable Feed" 
+            overlayImage={cardIcon1} 
+            overlayClass="icon1"
+          />
+          <FeatureCard 
+            bgImage={cardGreen} 
+            text="Swap and<br />Copy Trade" 
+            overlayImage={cardIcon2} 
+            overlayClass="icon2"
+          />
+          <FeatureCard 
+            bgImage={cardYellow} 
+            text="Configurable<br />Bonding Curves" 
+            overlayImage={cardIcon3} 
+            overlayClass="icon3"
+          />
+          <FeatureCard 
+            bgImage={cardGrey} 
+            text="Mint and<br />Trade NFTs" 
+            overlayImage={cardIcon4} 
+            overlayClass="icon4"
+          />
+          <FeatureCard 
+            bgImage={cardLightBlue} 
+            text="Publish to Solana<br />Mobile dApp store" 
+            overlayImage={cardIcon5} 
+            overlayClass="icon5"
+          />
         </div>
       </div>
     </section>

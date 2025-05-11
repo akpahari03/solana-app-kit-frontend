@@ -21,6 +21,8 @@
 
 .text {
   font-family: 'InterSemiBold' ,'Inter', sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 .card:hover {
@@ -28,6 +30,7 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* Original grid layout styles (kept for desktop) */
 .cardGridLayout {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -50,7 +53,7 @@
   grid-column: 3;
 }
 
-/* css of icons and animation inside the cards */
+/* Icon styles */
 .icon1 {
   position: absolute;
   top: 50%;
@@ -61,14 +64,9 @@
   z-index: 0;
   pointer-events: none;
 }
+
 .card:hover .icon1 {
   animation: floatUpDown 2s ease-in-out infinite;
-}
-
-@keyframes floatUpDown {
-  0%   { transform: translate(-50%, -50%); }
-  50%  { transform: translate(-50%, -55%); }
-  100% { transform: translate(-50%, -50%); }
 }
 
 .icon2 {
@@ -86,15 +84,6 @@
   animation: rotateZoomClockwise 0.5s ease-in-out forwards;
 }
 
-@keyframes rotateZoomClockwise {
-  0% {
-    transform: translateY(-50%) scale(1) rotate(0deg);
-  }
-  100% {
-    transform: translateY(-50%) scale(1.1) rotate(10deg);
-  }
-}
-
 .icon3 {
   position: absolute;
   top: 75%;
@@ -110,15 +99,6 @@
   animation: liftRotate 0.5s ease-in-out forwards;
 }
 
-@keyframes liftRotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -60%) rotate(-10deg);
-  }
-}
-
 .icon4 {
   position: absolute;
   top: 45%;
@@ -132,15 +112,6 @@
 
 .card:hover .icon4 {
   animation: zoomEffect 0.5s ease-in-out forwards;
-}
-
-@keyframes zoomEffect {
-  0% {
-    transform: translateY(-50%) scale(1);
-  }
-  100% {
-    transform: translateY(-50%) scale(1.2);
-  }
 }
 
 .icon5 {
@@ -159,6 +130,40 @@
   animation: moveLeftWithShadow 0.5s ease-in-out forwards;
 }
 
+/* Keyframes */
+@keyframes floatUpDown {
+  0%   { transform: translate(-50%, -50%); }
+  50%  { transform: translate(-50%, -55%); }
+  100% { transform: translate(-50%, -50%); }
+}
+
+@keyframes rotateZoomClockwise {
+  0% {
+    transform: translateY(-50%) scale(1) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) scale(1.1) rotate(10deg);
+  }
+}
+
+@keyframes liftRotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -60%) rotate(-10deg);
+  }
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+
 @keyframes moveLeftWithShadow {
   0% {
     transform: translateY(-50%) translateX(0);
@@ -167,5 +172,111 @@
   100% {
     transform: translateY(-50%) translateX(-15px);
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 631px) {
+  .card {
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.2;
+    z-index: 1;
+    position: relative;
+    font-weight: 600;
+    max-width: 60%;
+  }
+
+  /* Disable hover effects on mobile */
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Adjust icon sizes and positions for mobile */
+  /* Blue card icon - centered behind content */
+  .icon1 {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.9;
+  }
+
+  /* Green card icon - right aligned, partially visible */
+  .icon2 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    z-index: 0;
+    opacity: 0.9;
+  }
+
+  /* Yellow card icon - bottom right, partially visible */
+  .icon3 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: none;
+    z-index: 0;
+    opacity: 0.9;
+  }
+
+  /* Grey card icon - right aligned, centered */
+  .icon4 {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    z-index: 0;
+    opacity: 0.9;
+  }
+
+  /* Light blue card icon - right aligned */
+  .icon5 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    z-index: 0;
+    opacity: 0.9;
+  }
+
+  /* Disable animations on mobile for better performance */
+  .card:hover .icon3 {
+    animation: none;
+  } 
+}
+
+/* Very small screens */
+@media (max-width: 375px) {
+  .card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .text {
+    font-size: 16px;
   }
 }

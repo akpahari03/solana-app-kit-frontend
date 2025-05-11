@@ -1,18 +1,15 @@
 .footer-background {
   padding: 42px 24px 24px 24px;
 }
+
 .footer {
-  background-color: #1C2027;
+  background-color: #1c2027;
   color: white;
   display: flex;
   justify-content: space-between;
   padding: 48px;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
+  border-radius: 24px;
   flex-wrap: wrap;
-  
 }
 
 .footer-left {
@@ -23,7 +20,7 @@
 }
 
 .footer-heading p {
-  font-family: 'InterSemiBold', sans-serif;
+  font-family: "InterSemiBold", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
@@ -31,7 +28,7 @@
 }
 
 .footer-download-btn {
-  font-family: 'InterSemiBold', sans-serif;
+  font-family: "InterSemiBold", sans-serif;
   background-color: white;
   color: black;
   font-weight: 600;
@@ -40,23 +37,30 @@
   border-radius: 12px;
   cursor: pointer;
   font-size: 14px;
+  width: 180px; /* Set fixed width */
+  text-align: center;
 }
 
 .footer-wallet {
   position: relative;
-  font-family: 'Geist-Mono','InterMedium', sans-serif;
-  background-color: #2D333B;
-  color: #99A3B3;
-  display: inline-flex;
+  font-family: "Geist-Mono", "InterMedium", sans-serif;
+  background-color: #2d333b;
+  color: #99a3b3;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border-radius: 10px;
   padding: 10px 16px;
   font-size: 14px;
-  width: fit-content;
+  width: 180px; /* Match download button width */
   cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
 }
+
 .copy-wrapper {
+  position: absolute;
+  right: 12px; /* Position on the right side */
   display: flex;
   align-items: center;
 }
@@ -69,7 +73,7 @@
 }
 
 .copy-icon.copied {
-  color:lime;
+  color: lime;
   font-size: 18px;
 }
 
@@ -86,11 +90,27 @@
   white-space: nowrap;
   opacity: 0.9;
   pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
 }
 
 .footer-logo img {
   height: 24px;
-  margin-top: 24px;
+  margin-top: 0;
+}
+
+.logo-text {
+  font-family: "InterSemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
 }
 
 .footer-right {
@@ -106,28 +126,170 @@
   gap: 64px;
   margin-bottom: 24px;
 }
+
 .footer-title {
-  font-family: 'InterMedium', sans-serif;
-  color: #99A3B3
+  font-family: "InterMedium", sans-serif;
+  color: #99a3b3 !important;
 }
 
 .footer-columns p {
   margin: 4px 0;
   font-size: 14px;
 }
+
 .btn {
-  font-family: 'InterSemiBold', sans-serif;
+  font-family: "InterSemiBold", sans-serif;
 }
+
 .footer-bottom-text {
-  font-family: 'InterMedium', sans-serif;
-  color: #99A3B3;
+  font-family: "InterMedium", sans-serif;
+  color: #99a3b3;
 }
+
 .copy-feedback {
   margin-left: 10px;
   font-size: 0.85rem;
   color: #a0e7a0;
-} 
+}
+
 .btn a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Mobile logo - hidden by default on desktop */
+.mobile-footer-logo {
+  display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 631px) {
+  .footer-background {
+    padding: 40px 10px 10px 10px;
+  }
+  
+  .footer {
+    background-color: #1c1d24;
+    padding: 32px 20px;
+    border-radius: 15px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .footer-left {
+    max-width: 100%;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .footer-heading p {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  
+  .footer-download-btn {
+    width: 70%;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .footer-wallet {
+    width: auto;
+    padding: 14px 36px 14px 16px; /* Add extra padding on the right for the icon */
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 12px;
+    max-width: 70%;
+    text-align: center;
+  }
+  
+  /* Hide desktop logo on mobile */
+  .footer-logo {
+    display: none;
+  }
+  
+  /* Show mobile logo */
+  .mobile-footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 12px 0 0 0;
+  }
+  
+  .mobile-footer-logo img {
+    height: 28px;
+  }
+  
+  .footer-right {
+    width: 100%;
+    margin-left: 0;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  
+  .footer-columns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  
+  .footer-columns > div {
+    width: auto;
+  }
+  
+  .footer-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #99a3b3;
+  }
+  
+  .footer-columns p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: white;
+  }
+  
+  .footer-bottom-text {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 375px) {
+  .footer {
+    padding: 24px 16px;
+  }
+  
+  .footer-heading p {
+    font-size: 16px;
+  }
+  
+  .footer-download-btn {
+    font-size: 14px;
+  }
+  
+  .footer-wallet {
+    font-size: 12px;
+    padding: 12px 32px 12px 14px; /* Adjusted for smaller screens */
+  }
+  
+  .mobile-footer-logo img {
+    height: 24px;
+  }
+  
+  .footer-columns p {
+    font-size: 14px;
+  }
+  
+  .footer-bottom-text {
+    font-size: 11px;
+    text-align: center;
+  }
 }

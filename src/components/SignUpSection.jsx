@@ -14,15 +14,23 @@ const SignUpSection = () => {
         <img src={bg} alt="Background" className="signup-bg-image" />
 
         <div className="signup-content">
-          {/* Top-left heading */}
+          {/* Top-left heading - hidden on mobile */}
           <div className="signup-left-top">
             <h3 className="signup-heading">
               Sign-up and Login <br /> with any account
             </h3>
           </div>
 
-          {/* Bottom-left logos and powered by */}
+          {/* Social login buttons - now first on mobile */}
+          <div className="signup-right">
+            <img src={socialLogin} alt="Social Login Buttons" />
+          </div>
+
+          {/* Bottom-left logos and powered by - repositioned on mobile */}
           <div className="signup-left-bottom">
+            <h3 className="signup-heading mobile-only">
+              Sign-up and Login<br />with any account
+            </h3>
             <p className="signup-powered">Powered by</p>
             <div className="signup-logos">
               <img src={privy} alt="Privy" />
@@ -31,14 +39,9 @@ const SignUpSection = () => {
             </div>
           </div>
 
-          {/* Bottom-center welcome back image */}
+          {/* Bottom-center welcome back image - hidden on mobile */}
           <div className="signup-center">
             <img src={welcomeBack} alt="Welcome Back Form" />
-          </div>
-
-          {/* Top-right social login buttons */}
-          <div className="signup-right">
-            <img src={socialLogin} alt="Social Login Buttons" />
           </div>
         </div>
       </div>
