@@ -74,78 +74,80 @@ const PhoneSection = () => {
   };
 
   return (
-    <section className={styles.section}>
-      <div className={styles.phoneContainer}>
-        {/* Background image - only visible on desktop */}
-        <img src={phoneBg} alt="Phones" className={styles.phoneImage} />
+    <div className={styles.sectionWrapper}>
+      <section className={styles.section}>
+        <div className={styles.phoneContainer}>
+          {/* Background image - only visible on desktop */}
+          <img src={phoneBg} alt="Phones" className={styles.phoneImage} />
 
-        {/* Content overlay */}
-        <div className={styles.overlay}>
-          <div className={styles.topLeft}>
-            <h2>Try a Social Trading App and feel the magic!</h2>
+          {/* Content overlay */}
+          <div className={styles.overlay}>
+            <div className={styles.topLeft}>
+              <h2>Try a Social Trading App and feel the magic!</h2>
+            </div>
+
+            <div className={styles.topRight}>
+              <p>A fully open-source application for users and developers.</p>
+              <div className={styles.storeButtons}>
+                <a href="#" className={styles.storeBtn}>
+                  <img src={iosIcon} alt="Apple logo" />
+                  Download on iOS
+                </a>
+                <a href="https://play.google.com/store/games?hl=en&pli=1" className={styles.storeBtn}>
+                  <img src={playIcon} alt="Google Play logo" />
+                  Get it on Google Play
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div className={styles.topRight}>
-            <p>A fully open-source application for users and developers.</p>
-            <div className={styles.storeButtons}>
-              <a href="#" className={styles.storeBtn}>
-                <img src={iosIcon} alt="Apple logo" />
-                Download on iOS
-              </a>
-              <a href="https://play.google.com/store/games?hl=en&pli=1" className={styles.storeBtn}>
-                <img src={playIcon} alt="Google Play logo" />
-                Get it on Google Play
-              </a>
+          {/* Desktop phone images */}
+          <div className={styles.phoneMockups}>
+            <div className={styles.phoneLeft}>
+              <img src={phone1} alt="Phone 1" />
+            </div>
+            <div className={styles.phoneCenter}>
+              <img src={phone2} alt="Phone 2" />
+            </div>
+            <div className={styles.phoneRight}>
+              <img src={phone3} alt="Phone 3" />
+            </div>
+          </div>
+
+          {/* Mobile carousel */}
+          <div className={styles.carouselContainer}>
+            <div 
+              className={styles.carouselTrack}
+              ref={carouselRef}
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
+              {phones.map((phone, index) => (
+                <div 
+                  key={phone.id}
+                  className={`${styles.carouselSlide} ${index === currentSlide ? styles.active : ''}`}
+                >
+                  <img src={phone.src} alt={phone.alt} />
+                </div>
+              ))}
+            </div>
+
+            {/* Carousel dots */}
+            <div className={styles.carouselDots}>
+              {phones.map((_, index) => (
+                <div
+                  key={index}
+                  className={`${styles.dot} ${index === currentSlide ? styles.active : ''}`}
+                  onClick={() => goToSlide(index)}
+                />
+              ))}
             </div>
           </div>
         </div>
-
-        {/* Desktop phone images */}
-        <div className={styles.phoneMockups}>
-          <div className={styles.phoneLeft}>
-            <img src={phone1} alt="Phone 1" />
-          </div>
-          <div className={styles.phoneCenter}>
-            <img src={phone2} alt="Phone 2" />
-          </div>
-          <div className={styles.phoneRight}>
-            <img src={phone3} alt="Phone 3" />
-          </div>
-        </div>
-
-        {/* Mobile carousel */}
-        <div className={styles.carouselContainer}>
-          <div 
-            className={styles.carouselTrack}
-            ref={carouselRef}
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-          >
-            {phones.map((phone, index) => (
-              <div 
-                key={phone.id}
-                className={`${styles.carouselSlide} ${index === currentSlide ? styles.active : ''}`}
-              >
-                <img src={phone.src} alt={phone.alt} />
-              </div>
-            ))}
-          </div>
-
-          {/* Carousel dots */}
-          <div className={styles.carouselDots}>
-            {phones.map((_, index) => (
-              <div
-                key={index}
-                className={`${styles.dot} ${index === currentSlide ? styles.active : ''}`}
-                onClick={() => goToSlide(index)}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

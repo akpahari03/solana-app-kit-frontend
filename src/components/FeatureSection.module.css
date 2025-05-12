@@ -99,7 +99,7 @@
   }
 
   .leftText h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.3;
     text-align: center;
   }
@@ -110,7 +110,7 @@
   }
 
   .rightText p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
   }
