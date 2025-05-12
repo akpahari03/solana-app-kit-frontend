@@ -13,7 +13,7 @@ export default defineConfig({
     },
     allowedHosts: [
       'localhost',
-      '1be3-2406-7400-75-4cb9-c0-7084-5d67-fc83.ngrok-free.app',
+      'https://ecc0-2406-7400-75-e8a0-1138-7863-be66-26ac.ngrok-free.app',
       '.ngrok-free.app', // This wildcard covers all ngrok-free.app subdomains
     ]
   }

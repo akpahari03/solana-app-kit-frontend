@@ -62,19 +62,19 @@ const Footer = () => {
           <div className="footer-columns">
             <div>
               <p className="footer-title">Company</p>
-              <p className='btn'><a href='#' target='blank'>SendAI</a></p>
-              <p className='btn'><a href='#' target='blank'>SendArcade</a></p>
-              <p className='btn'><a href='#' target='blank'>Send Coin</a></p>
+              <p className='btn'><a href='https://www.sendai.fun/' target='_blank'>SendAI</a></p>
+              <p className='btn'><a href='https://sendarcade.fun/' target='_blank'>SendArcade</a></p>
+              <p className='btn'><a href='https://www.thesendcoin.com/' target='_blank'>Send Coin</a></p>
             </div>
             <div>
               <p className="footer-title">Resources</p>
-              <p className='btn'><a href='https://github.com' target='blank'>Github</a></p>
-              <p className='btn'><a href='#' target='blank'>Docs</a></p>
+              <p className='btn'><a href='https://github.com/SendArcade/solana-app-kit' target='_blank'>Github</a></p>
+              <p className='btn'><a href='https://docs.1doma.in/docs/introduction' target='_blank'>Docs</a></p>
             </div>
             <div>
-              <p className="footer-title">Connect</p>
-              <p className='btn'><a href='#' target='blank'>X (Twitter)</a></p>
-              <p className='btn'><a href='#' target='blank'>Telegram</a></p>
+              <p className="footer-title">X (Twitter)</p>
+              <p className='btn'><a href='https://x.com/sendarcadefun' target='_blank'>Send Arcade</a></p>
+              <p className='btn'><a href='https://x.com/sendaifun' target='_blank'>Send AI</a></p>
             </div>
           </div>
           
